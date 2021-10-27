@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import '../../../colors.scss';
+#intro {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin: auto 0;
+	margin-left: 10%;
+	font-family: PT Sans;
+	font-size: 4rem;
+	color: $secondary-color;
+	.typewriter {
+		display: flex;
+		.designation {
+			margin-left: 20px;
+			min-width: 340px;
+			font-family: Roboto Slab;
+			color: $additional-color;
+		}
+	}
+}
+
+.name {
+	padding: 0 10px;
+	background-color: $secondary-color;
+	border-radius: 20px;
+	font-family: Merriweather;
+	color: $primary-color;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	&:hover {
+		color: $secondary-color;
+		background-color: $additional-color;
+	}
+}

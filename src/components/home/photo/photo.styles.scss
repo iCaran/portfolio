@@ -1,0 +1,14 @@
+#photo {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0 0;
+	padding: 0 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+
+	img {
+		height: 100vh;
+		margin: auto;
+	}
+}

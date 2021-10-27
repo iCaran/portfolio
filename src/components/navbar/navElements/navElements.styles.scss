@@ -1,0 +1,13 @@
+@import '../../../colors.scss';
+
+.nav-elements {
+	margin: auto;
+	color: $secondary-color;
+	text-decoration: none;
+	&:hover {
+		color: $additional-color;
+	}
+}
+.active {
+	color: $additional-color;
+}
