@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shivambhasin2002.github.io/portfolio/static/css/main.625d12ba.chunk.css",
+    "main.css": "/shivambhasin2002.github.io/portfolio/static/css/main.ba6863f2.chunk.css",
     "main.js": "/shivambhasin2002.github.io/portfolio/static/js/main.da1b29a2.chunk.js",
     "main.js.map": "/shivambhasin2002.github.io/portfolio/static/js/main.da1b29a2.chunk.js.map",
     "runtime-main.js": "/shivambhasin2002.github.io/portfolio/static/js/runtime-main.962384c1.js",
@@ -8,14 +8,14 @@
     "static/js/2.c85aa35a.chunk.js": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js",
     "static/js/2.c85aa35a.chunk.js.map": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js.map",
     "index.html": "/shivambhasin2002.github.io/portfolio/index.html",
-    "static/css/main.625d12ba.chunk.css.map": "/shivambhasin2002.github.io/portfolio/static/css/main.625d12ba.chunk.css.map",
+    "static/css/main.ba6863f2.chunk.css.map": "/shivambhasin2002.github.io/portfolio/static/css/main.ba6863f2.chunk.css.map",
     "static/js/2.c85aa35a.chunk.js.LICENSE.txt": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js.LICENSE.txt",
     "static/media/image1.c9896d6d.jpg": "/shivambhasin2002.github.io/portfolio/static/media/image1.c9896d6d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.962384c1.js",
     "static/js/2.c85aa35a.chunk.js",
-    "static/css/main.625d12ba.chunk.css",
+    "static/css/main.ba6863f2.chunk.css",
     "static/js/main.da1b29a2.chunk.js"
   ]
 }
