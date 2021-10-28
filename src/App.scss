@@ -6,3 +6,6 @@ body {
 	background-color: $primary-color;
 	cursor: default;
 }
+* {
+	transition: all 1s ease;
+}

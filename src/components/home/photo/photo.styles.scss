@@ -8,7 +8,12 @@
 	overflow-x: hidden;
 
 	img {
-		height: 100vh;
 		margin: auto;
+		@media screen and (min-width: 1000px) {
+			height: 100vh;
+		}
+		@media screen and (max-width: 830px) {
+			border-radius: 500px;
+		}
 	}
 }
