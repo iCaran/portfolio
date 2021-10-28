@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.625d12ba.chunk.css",
-    "main.js": "/portfolio/static/js/main.da1b29a2.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.da1b29a2.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.2fe0503b.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.2fe0503b.js.map",
-    "static/js/2.c85aa35a.chunk.js": "/portfolio/static/js/2.c85aa35a.chunk.js",
-    "static/js/2.c85aa35a.chunk.js.map": "/portfolio/static/js/2.c85aa35a.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.625d12ba.chunk.css.map": "/portfolio/static/css/main.625d12ba.chunk.css.map",
-    "static/js/2.c85aa35a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c85aa35a.chunk.js.LICENSE.txt",
-    "static/media/image1.c9896d6d.jpg": "/portfolio/static/media/image1.c9896d6d.jpg"
+    "main.css": "/shivambhasin2002.github.io/portfolio/static/css/main.625d12ba.chunk.css",
+    "main.js": "/shivambhasin2002.github.io/portfolio/static/js/main.da1b29a2.chunk.js",
+    "main.js.map": "/shivambhasin2002.github.io/portfolio/static/js/main.da1b29a2.chunk.js.map",
+    "runtime-main.js": "/shivambhasin2002.github.io/portfolio/static/js/runtime-main.962384c1.js",
+    "runtime-main.js.map": "/shivambhasin2002.github.io/portfolio/static/js/runtime-main.962384c1.js.map",
+    "static/js/2.c85aa35a.chunk.js": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js",
+    "static/js/2.c85aa35a.chunk.js.map": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js.map",
+    "index.html": "/shivambhasin2002.github.io/portfolio/index.html",
+    "static/css/main.625d12ba.chunk.css.map": "/shivambhasin2002.github.io/portfolio/static/css/main.625d12ba.chunk.css.map",
+    "static/js/2.c85aa35a.chunk.js.LICENSE.txt": "/shivambhasin2002.github.io/portfolio/static/js/2.c85aa35a.chunk.js.LICENSE.txt",
+    "static/media/image1.c9896d6d.jpg": "/shivambhasin2002.github.io/portfolio/static/media/image1.c9896d6d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2fe0503b.js",
+    "static/js/runtime-main.962384c1.js",
     "static/js/2.c85aa35a.chunk.js",
     "static/css/main.625d12ba.chunk.css",
     "static/js/main.da1b29a2.chunk.js"
