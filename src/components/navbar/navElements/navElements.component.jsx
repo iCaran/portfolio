@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './navElements.styles.scss';
 
 const NavElements = (props) => (
-	<a
+	<Link
+		to={`/${props.element.toLowerCase()}`}
 		className={`nav-elements ${props.active ? 'active' : ''}`}
-		href={`#${props.element}`}
 		onClick={props.handleClick}
 	>
 		{props.element}
-	</a>
+	</Link>
 );
 
 export default NavElements;
