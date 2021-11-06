@@ -20,6 +20,9 @@
 			color: $additional-color;
 		}
 	}
+	@media (max-width: 520px) {
+		font-size: 3rem;
+	}
 }
 
 .name {

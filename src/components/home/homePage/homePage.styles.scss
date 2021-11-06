@@ -5,7 +5,8 @@
 	height: 100vh;
 	flex-basis: auto;
 	@media (max-width: 830px) and (min-width: 320px) {
-		margin-top: 100px;
+		margin-top: 70px;
 		flex-wrap: wrap-reverse;
+		height: auto;
 	}
 }
