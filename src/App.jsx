@@ -4,13 +4,14 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './App.scss';
 
 import Nav from './components/navbar/nav/nav.component';
-import About from './components/home/homePage/homePage.component';
+import Home from './components/home/homePage/homePage.component';
+import About from './components/about/aboutPage/aboutPage.component.jsx';
 
 function App() {
 	const location = useLocation();
 	return (
 		<div className='App'>
-			<Nav />
+			<Nav location={location.pathname} />
 			<TransitionGroup>
 				<CSSTransition
 					timeout={{ enter: 1500, exit: 500 }}
@@ -18,8 +19,8 @@ function App() {
 					key={location.key}
 				>
 					<Routes location={location}>
-						<Route path='/' element={<About />} />
-						<Route path='/home' element={<About />} />
+						<Route path='/' element={<Home />} />
+						<Route path='/about' element={<About />} />
 					</Routes>
 				</CSSTransition>
 			</TransitionGroup>

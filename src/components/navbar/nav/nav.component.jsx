@@ -5,14 +5,23 @@ import NavElement from '../navElements/navElements.component';
 import './nav.styles.scss';
 
 class Nav extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			elements: ['Home', 'About', 'Resume', 'Work', 'Contact'],
 			active: 0
 		};
 	}
 
+	componentDidMount() {
+		if (this.props.location === '/') this.setState({ active: 0 });
+		else
+			this.setState({
+				active: this.state.elements.findIndex((e) => {
+					return e.toLowerCase() === this.props.location.slice(1);
+				})
+			});
+	}
 	render() {
 		return (
 			<nav className='Nav navbar fixed-top'>

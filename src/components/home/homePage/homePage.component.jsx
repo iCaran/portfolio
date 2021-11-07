@@ -5,11 +5,11 @@ import './homePage.styles.scss';
 import Intro from '../introText/introText.component';
 import Photo from '../photo/photo.component';
 
-const About = () => (
-	<div id='about'>
+const Home = () => (
+	<div id='intro'>
 		<Intro />
 		<Photo />
 	</div>
 );
 
-export default About;
+export default Home;

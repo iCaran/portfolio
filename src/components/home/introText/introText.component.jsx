@@ -2,7 +2,7 @@ import TypeWriterEffect from 'typewriter-effect';
 import './introText.styles.scss';
 
 const Intro = () => (
-	<div id='intro'>
+	<div id='introText'>
 		<div>Hello</div>
 		<div>
 			I am <span className='name'>Shivam</span>,

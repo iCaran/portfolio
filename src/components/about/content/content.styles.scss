@@ -1,0 +1,16 @@
+@import '../../../colors.scss';
+
+.content-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// min-width: 400px;
+}
+#content {
+	color: $secondary-color;
+	background-color: $additional-color;
+	margin: 0 10% 0 30%;
+	padding: 20px;
+	text-align: justify;
+	border-radius: 50px 0px 50px 0px;
+}
