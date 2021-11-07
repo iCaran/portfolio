@@ -14,11 +14,12 @@ class Nav extends Component {
 	}
 
 	componentDidMount() {
-		if (this.props.location === '/') this.setState({ active: 0 });
+		console.log(this.props.location.slice(11));
+		if (this.props.location.slice(11) === '') this.setState({ active: 0 });
 		else
 			this.setState({
 				active: this.state.elements.findIndex((e) => {
-					return e.toLowerCase() === this.props.location.slice(1);
+					return e.toLowerCase() === this.props.location.slice(11);
 				})
 			});
 	}

@@ -5,7 +5,7 @@ import './navElements.styles.scss';
 
 const NavElements = (props) => (
 	<Link
-		to={`/${
+		to={`/portfolio/${
 			props.element.toLowerCase() === 'home' ? '' : props.element.toLowerCase()
 		}`}
 		className={`nav-elements ${props.active ? 'active' : ''}`}
