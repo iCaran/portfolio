@@ -8,6 +8,7 @@ body {
 }
 * {
 	transition: all 1s ease;
+	user-select: none;
 }
 .fade-enter {
 	opacity: 0;

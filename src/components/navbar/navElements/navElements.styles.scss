@@ -11,4 +11,6 @@
 }
 .active {
 	color: $additional-color;
+	pointer-events: none;
+	cursor: default;
 }

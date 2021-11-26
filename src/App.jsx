@@ -4,8 +4,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './App.scss';
 
 import Nav from './components/navbar/nav/nav.component';
-import Home from './components/home/homePage/homePage.component';
-import About from './components/about/aboutPage/aboutPage.component.jsx';
+import Home from './pages/homePage/homePage.component';
+import About from './pages/aboutPage/aboutPage.component';
 
 function App() {
 	const location = useLocation();
