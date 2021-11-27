@@ -8,13 +8,12 @@ class Nav extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			elements: ['Home', 'About', 'Resume', 'Work', 'Contact'],
+			elements: ['Home', 'About', 'Work', 'Contact'],
 			active: 0
 		};
 	}
 
 	componentDidMount() {
-		console.log(this.props.location.slice(11));
 		if (this.props.location.slice(11) === '') this.setState({ active: 0 });
 		else
 			this.setState({

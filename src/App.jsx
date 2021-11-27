@@ -6,6 +6,7 @@ import './App.scss';
 import Nav from './components/navbar/nav/nav.component';
 import Home from './pages/homePage/homePage.component';
 import About from './pages/aboutPage/aboutPage.component';
+import Work from './pages/workPage/work.component';
 
 function App() {
 	const location = useLocation();
@@ -21,7 +22,7 @@ function App() {
 					<Routes location={location}>
 						<Route path='/portfolio/' element={<Home />} />
 						<Route path='/portfolio/about' element={<About />} />
-						{/* <Route path='*' element={<Home />} /> */}
+						<Route path='/portfolio/work' element={<Work />} />
 					</Routes>
 				</CSSTransition>
 			</TransitionGroup>

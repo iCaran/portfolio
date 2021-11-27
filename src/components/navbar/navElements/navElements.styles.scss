@@ -1,16 +1,19 @@
 @import '../../../colors.scss';
 
 .nav-elements {
+	font-size: 1.1rem;
 	margin: auto;
 	padding: 0 10px;
 	color: $secondary-color;
 	text-decoration: none;
 	&:hover {
 		color: $additional-color;
+		font-weight: bolder;
 	}
 }
 .active {
 	color: $additional-color;
 	pointer-events: none;
 	cursor: default;
+	font-weight: bolder;
 }
