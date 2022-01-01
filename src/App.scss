@@ -9,6 +9,7 @@ body {
 * {
 	transition: all 1s ease;
 	user-select: none;
+	box-sizing: border-box;
 }
 .fade-enter {
 	opacity: 0;
