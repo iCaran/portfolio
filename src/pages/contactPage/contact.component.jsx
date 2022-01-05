@@ -74,7 +74,7 @@ const Contact = () => {
 					<input
 						type='hidden'
 						name='_next'
-						value='http://localhost:3000/portfolio/contact'
+						value='https://shivambhasin2002.github.io/portfolio/'
 					/>
 					<input type='hidden' name='_template' value='table' />
 					<span className='social-media d-flex'>
