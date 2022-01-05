@@ -74,7 +74,7 @@ const Contact = () => {
 					<input
 						type='hidden'
 						name='_next'
-						value='https://shivambhasin2002.github.io/portfolio/'
+						value='https://shivam-bhasin.netlify.app/contact'
 					/>
 					<input type='hidden' name='_template' value='table' />
 					<span className='social-media d-flex'>
@@ -87,14 +87,23 @@ const Contact = () => {
 							<a
 								href='https://www.linkedin.com/in/shivam-bhasin-465233166/'
 								target='_blank'
+								rel='noreferrer'
 							>
-								<i class='fab fa-linkedin-in'></i>
+								<i className='fab fa-linkedin-in'></i>
 							</a>
-							<a href='https://github.com/ShivamBhasin2002' target='_blank'>
-								<i class='fab fa-github'></i>
+							<a
+								href='https://github.com/ShivamBhasin2002'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<i className='fab fa-github'></i>
 							</a>
-							<a href='https://www.instagram.com/_.shivam.08/' target='_blank'>
-								<i class='fab fa-instagram'></i>
+							<a
+								href='https://www.instagram.com/_.shivam.08/'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<i className='fab fa-instagram'></i>
 							</a>
 						</span>
 					</span>

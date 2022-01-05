@@ -21,10 +21,10 @@ function App() {
 					key={location.key}
 				>
 					<Routes location={location}>
-						<Route path='/portfolio/' element={<Home />} />
-						<Route path='/portfolio/about' element={<About />} />
-						<Route path='/portfolio/work' element={<Work />} />
-						<Route path='/portfolio/contact' element={<Contact />} />
+						<Route exact path='/' element={<Home />} />
+						<Route exact path='/about' element={<About />} />
+						<Route exact path='/work' element={<Work />} />
+						<Route exact path='/contact' element={<Contact />} />
 					</Routes>
 				</CSSTransition>
 			</TransitionGroup>
