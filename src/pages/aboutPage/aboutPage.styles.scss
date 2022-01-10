@@ -3,14 +3,14 @@
 #about {
 	background-color: $primary-color;
 	height: 100vh;
+	width: 100vw;
 	display: flex;
-	flex-basis: auto;
 	padding-top: 30px;
-	@media (max-width: 930px) and (min-width: 320px) {
-		margin-top: 70px;
-		.image-container {
-			display: none;
-		}
+
+	// flex-wrap: wrap;
+	@media (max-width: 500px) and (min-width: 320px) {
+		flex-wrap: wrap;
+		padding-top: 100px;
 		.content-wrapper {
 			#content {
 				margin: auto 20px !important;

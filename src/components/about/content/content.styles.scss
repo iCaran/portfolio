@@ -1,17 +1,19 @@
 @import '../../../colors.scss';
 
 .content-wrapper {
+	flex-shrink: 1.8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// min-width: 400px;
 }
-#content {
-	color: $primary-color;
-	background-color: $secondary-color;
-	margin: 0 10% 0 30%;
+.content {
+	color: $secondary-color;
+	background-color: $option-color1;
+	opacity: 0.7;
+	margin: 0 10% 0 0;
 	padding: 30px;
 	text-align: justify;
 	border-radius: 50px 0px 50px 0px;
 	font-weight: bold;
+	font-size: 80%;
 }
