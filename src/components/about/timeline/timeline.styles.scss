@@ -1,7 +1,7 @@
 .timeline-container {
-	height: 100vh;
+	height: 100%;
 	@media (max-width: 500px) {
-		height: 500px;
+		height: 400px;
 	}
 	width: 100%;
 	flex-grow: 1;
@@ -28,6 +28,33 @@
 			cursor: pointer;
 			transition: transform 0.4s ease;
 			background-color: white;
+			.academic-timeline {
+				height: 100%;
+				padding: 10px;
+				display: flex;
+				font-size: 8vw;
+				justify-content: space-evenly;
+				.fas {
+					text-align: center;
+					box-sizing: border-box;
+					height: fit-content;
+					flex-basis: fit-content;
+					margin: auto 0;
+				}
+				.academic-details {
+					box-sizing: border-box;
+					text-align: center;
+					justify-content: middle;
+					height: min-content;
+					margin: auto 0;
+					h3,
+					h4,
+					h2 {
+						margin: 0 auto;
+						height: min-content;
+					}
+				}
+			}
 		}
 		.upper {
 			box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.37);

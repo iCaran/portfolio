@@ -2,6 +2,21 @@ import React, { useEffect } from 'react';
 
 import './timeline.styles.scss';
 
+const AcademicTimeline = ({ logo, ...details }) => {
+	return (
+		<div className='academic-timeline'>
+			<i className={`fas ${logo}`}></i>
+			<div className='academic-details'>
+				<h3>{details.name}</h3>
+				<h6 className='text-muted'>{details.course}</h6>
+				<h2>
+					{details.achievementName}: {details.achievementValue}
+				</h2>
+			</div>
+		</div>
+	);
+};
+
 const Timeline = () => {
 	let n = 5;
 	const changeSlide = (i) => {
@@ -50,11 +65,17 @@ const Timeline = () => {
 			<div className='slider'>
 				<input type='radio' name='slider' id='s1' index={1} />
 				<input type='radio' name='slider' id='s2' index={2} />
-				<input type='radio' name='slider' id='s3' defaultChecked index={3} />
+				<input type='radio' name='slider' id='s3' index={3} />
 				<input type='radio' name='slider' id='s4' index={4} />
 				<input type='radio' name='slider' id='s5' index={5} />
 				<label htmlFor='s1' id='slide1' className='slide d-none '>
-					<div>Slide 1</div>
+					<AcademicTimeline
+						logo='fa-school'
+						name='Green Fields School'
+						course='High School, Computer Science'
+						achievementName='Board Marks'
+						achievementValue='93.4%'
+					/>
 				</label>
 				<label htmlFor='s2' id='slide2' className='slide upper'>
 					<div>Slide 2</div>
