@@ -9,9 +9,14 @@ const AcademicTimeline = ({ logo, ...details }) => {
 			<div className='academic-details'>
 				<h3>{details.name}</h3>
 				<h6 className='text-muted'>{details.course}</h6>
-				<h2>
-					{details.achievementName}: {details.achievementValue}
-				</h2>
+				{details.achievementValue ? (
+					<h2>
+						{details.achievementName}:{' '}
+						<span className='text-success'>{details.achievementValue}</span>
+					</h2>
+				) : (
+					<h2>{details.achievementName}</h2>
+				)}
 			</div>
 		</div>
 	);
@@ -78,10 +83,21 @@ const Timeline = () => {
 					/>
 				</label>
 				<label htmlFor='s2' id='slide2' className='slide upper'>
-					<div>Slide 2</div>
+					<AcademicTimeline
+						logo='fa-graduation-cap'
+						name='Manav Rachna International Institute Of Research And Studies'
+						course='B.Tech CSE, Cloud Computing'
+						achievementName='GPA'
+						achievementValue='8.59 SGPA'
+					/>
 				</label>
 				<label htmlFor='s3' id='slide3' className='slide middle'>
-					<div>Slide 3</div>
+					<AcademicTimeline
+						logo='fa-laptop-house'
+						name='Crendence Analytics'
+						course='Backend Development Intern'
+						achievementName='Developed Cli tools using NodeJS'
+					/>
 				</label>
 				<label htmlFor='s4' id='slide4' className='slide lower'>
 					<div>Slide 4</div>
