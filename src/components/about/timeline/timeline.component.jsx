@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './timeline.styles.scss';
 
@@ -22,8 +22,121 @@ const AcademicTimeline = ({ logo, ...details }) => {
 	);
 };
 
+const CodingStats = () => {
+	let [codechefData, setCodechefData] = useState({
+		stars: 0,
+		rating: 0,
+		solved: 0
+	});
+	let [githubData, setGithubData] = useState({
+		repos: 0,
+		followers: 0
+	});
+	useEffect(() => {
+		fetch(
+			'https://competitive-programming-platform.p.rapidapi.com/codechef/shivam_bhasin',
+			{
+				method: 'GET',
+				headers: {
+					'x-rapidapi-host': 'competitive-programming-platform.p.rapidapi.com',
+					'x-rapidapi-key': '0f448c51d2msh5303153a42379f2p1344ccjsncf88884fd3ce'
+				}
+			}
+		)
+			.then((res) => res.json())
+			.then((res) =>
+				setCodechefData({
+					stars: res.stars[0],
+					rating: res.highest_rating,
+					solved: res.fully_solved.count + res.partially_solved.count
+				})
+			)
+			.catch((err) => {
+				console.error(err);
+			});
+		fetch('https://api.github.com/users/ShivamBhasin2002')
+			.then((res) => res.json())
+			.then((res) =>
+				setGithubData({ repos: res.public_repos, followers: res.followers })
+			);
+	}, []);
+	const getColor = (i) => {
+		switch (parseInt(i)) {
+			case 1:
+				return '#666666';
+			case 2:
+				return '#1E7D22';
+			case 3:
+				return '#3366CC';
+			case 4:
+				return '#684273';
+			case 5:
+				return '#FFBF00';
+			case 6:
+				return '#FF7F00';
+			case 7:
+				return '#D0011B';
+		}
+	};
+	return (
+		<div className='codingStats'>
+			<div className='platform'>
+				<i className='fas fa-code'></i>
+				<h6>
+					<b>CODECHEF</b>
+				</h6>
+				<div className='stats'>
+					<b>Stars:</b>{' '}
+					<span style={{ color: getColor(codechefData.stars) }}>
+						{codechefData.stars}{' '}
+						<i
+							className='fas fa-star'
+							style={{ color: getColor(codechefData.stars) }}
+						></i>{' '}
+					</span>
+					<br />
+					<b>Rating:</b>{' '}
+					<span style={{ color: getColor(codechefData.stars) }}>
+						{codechefData.rating}
+					</span>
+					<br />
+					<b>Solved:</b> <span>{codechefData.solved}</span>
+				</div>
+			</div>
+			<div className='platform'>
+				<i className='fab fa-github'></i>
+				<h6>
+					<b>GITHUB</b>
+				</h6>
+				<div className='stats'>
+					<b>Repositories:</b> <span>{githubData.repos}</span>
+					<br />
+					<b>Followers:</b> <span>{githubData.followers}</span>
+					<br />
+				</div>
+			</div>
+			<div className='platform'>
+				<i className='fab'>
+					<i className='fab fa-cuttlefish'></i>
+					<i className='fas fa-plus'></i>
+					<i className='fas fa-plus'></i>
+				</i>
+				<h6>
+					<b>LEETCODE</b>
+				</h6>
+				<div className='stats'>
+					<b>Solved:</b> <span>62</span>
+					<br />
+					<b>Acceptance:</b> <span>33.6</span>
+					<br />
+				</div>
+			</div>
+		</div>
+	);
+};
+
 const Timeline = () => {
-	let n = 5;
+	let n = 4;
 	const changeSlide = (i) => {
 		i = parseInt(i);
 		let t = document.querySelector(`#slide${i}`);
@@ -73,7 +186,7 @@ const Timeline = () => {
 				<input type='radio' name='slider' id='s3' index={3} />
 				<input type='radio' name='slider' id='s4' index={4} />
 				<input type='radio' name='slider' id='s5' index={5} />
-				<label htmlFor='s1' id='slide1' className='slide d-none '>
+				<label htmlFor='s1' id='slide1' className='slide upper'>
 					<AcademicTimeline
 						logo='fa-school'
 						name='Green Fields School'
@@ -82,7 +195,7 @@ const Timeline = () => {
 						achievementValue='93.4%'
 					/>
 				</label>
-				<label htmlFor='s2' id='slide2' className='slide upper'>
+				<label htmlFor='s2' id='slide2' className='slide middle'>
 					<AcademicTimeline
 						logo='fa-graduation-cap'
 						name='Manav Rachna International Institute Of Research And Studies'
@@ -91,7 +204,7 @@ const Timeline = () => {
 						achievementValue='8.59 SGPA'
 					/>
 				</label>
-				<label htmlFor='s3' id='slide3' className='slide middle'>
+				<label htmlFor='s3' id='slide3' className='slide lower'>
 					<AcademicTimeline
 						logo='fa-laptop-house'
 						name='Crendence Analytics'
@@ -99,11 +212,8 @@ const Timeline = () => {
 						achievementName='Developed Cli tools using NodeJS'
 					/>
 				</label>
-				<label htmlFor='s4' id='slide4' className='slide lower'>
-					<div>Slide 4</div>
-				</label>
-				<label htmlFor='s5' id='slide5' className='slide d-none '>
-					<div>Slide 5</div>
+				<label htmlFor='s4' id='slide4' className='slide d-none'>
+					<CodingStats />
 				</label>
 			</div>
 		</div>
