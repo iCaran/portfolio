@@ -1,9 +1,9 @@
 @import '../../../colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 .Nav {
-	background-color: transparent;
+	background-color: rgba(13, 17, 23, 0.2);
 	justify-content: center;
-	padding: 0 10%;
+	padding: 10px 10%;
 	padding-top: 24px;
 	font-family: 'Lato', sans-serif;
 	@media (min-width: 1030px) {
