@@ -4,25 +4,32 @@ import './content.styles.scss';
 
 const Content = () => (
 	<div className='content-wrapper'>
-		<div className='content'>
-			Hi, I am Shivam Bhasin, a B.Tech CSE student with a huge interest in
-			technology, coding, and development. Well, it all started with an idea to
-			build a School Report Management System for my school and I ended up
-			learning full-stack development. Currently, I have hands-on experience in
-			Web development, Video Editing, Photo Editing, and competitive
-			Programming. I plan to be a Freelancer in these fields till I am pursuing
-			my college and want to get a lot of skills and experience in the industry.
-			I am also a fast typer and a very fast learner. My best interest is to
-			develop new things and work in a good community and give back to the
-			community using my skills. I like to teach people how to code because it
-			helps me gain knowledge myself too. I am looking forward to contributing
-			to Open Source too. I consider myself as a forever student adapting to
-			every challenge thrown towards me and accomplishing it. At the moment I am
-			managing my college studies meanwhile I am also preparing my skills in the
-			freelancing industry but further on I would like to look into Internship
-			opportunities so that some real-life experience. You can talk to me about
-			anything at my mail below on this webpage.
-		</div>
+		<ul className='content'>
+			<li>
+				Hi, I am Shivam Bhasin, a B.Tech CSE student with a huge interest in
+				technology, coding, and development.
+			</li>
+			<li>
+				Currently, I have hands-on experience in Full Stack Web development,
+				Video Editing, Photo Editing, Competitive Programming.
+			</li>
+			<li>
+				Working on technologies like NodeJS, ReactJS, SQL, Python, C++,
+				Firebase, AWS.
+			</li>
+			<li>
+				Built a CLI application that allows all clients of Credence Analytics to
+				automate the intialization of their product.
+			</li>
+			<a
+				href='https://drive.google.com/file/d/1hq0QW10x34a_y6zao-WCEm90MZJT11aZ/view?usp=sharing'
+				className='btn'
+				target={'_blank'}
+				rel='noreferrer'
+			>
+				My Resume
+			</a>
+		</ul>
 	</div>
 );
 

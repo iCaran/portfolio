@@ -76,6 +76,8 @@ const CodingStats = () => {
 				return '#FF7F00';
 			case 7:
 				return '#D0011B';
+			default:
+				return '#000000';
 		}
 	};
 	return (
