@@ -138,7 +138,8 @@ const CodingStats = () => {
 };
 
 const Timeline = () => {
-	let n = 4;
+	let n = 4,
+		i = 2;
 	const changeSlide = (i) => {
 		i = parseInt(i);
 		let t = document.querySelector(`#slide${i}`);
@@ -171,7 +172,10 @@ const Timeline = () => {
 		}
 	};
 	useEffect(() => {
-		const listner = (e) => changeSlide(e.target.getAttribute('index'));
+		const listner = (e) => {
+			i = e.target.getAttribute('index');
+			changeSlide(e.target.getAttribute('index'));
+		};
 		document
 			.querySelectorAll('input[type="radio"]')
 			.forEach((radioBtn) => radioBtn.addEventListener('change', listner));
@@ -180,6 +184,14 @@ const Timeline = () => {
 				.querySelectorAll('input[type="radio"]')
 				.forEach((radioBtn) => radioBtn.removeEventListener('change', listner));
 	});
+	useEffect(() => {
+		let interval = setInterval(() => {
+			i++;
+			if (i === n + 1) i = 1;
+			changeSlide(i);
+		}, 5000);
+		return () => clearInterval(interval);
+	}, []);
 	return (
 		<div className='timeline-container'>
 			<div className='slider'>
@@ -187,8 +199,7 @@ const Timeline = () => {
 				<input type='radio' name='slider' id='s2' index={2} />
 				<input type='radio' name='slider' id='s3' index={3} />
 				<input type='radio' name='slider' id='s4' index={4} />
-				<input type='radio' name='slider' id='s5' index={5} />
-				<label htmlFor='s1' id='slide1' className='slide upper'>
+				<label htmlFor='s1' id='slide1' className='slide upper' index={1}>
 					<AcademicTimeline
 						logo='fa-school'
 						name='Green Fields School'
@@ -197,7 +208,7 @@ const Timeline = () => {
 						achievementValue='93.4%'
 					/>
 				</label>
-				<label htmlFor='s2' id='slide2' className='slide middle'>
+				<label htmlFor='s2' id='slide2' className='slide middle' index={2}>
 					<AcademicTimeline
 						logo='fa-graduation-cap'
 						name='Manav Rachna International Institute Of Research And Studies'
@@ -206,7 +217,7 @@ const Timeline = () => {
 						achievementValue='8.59 SGPA'
 					/>
 				</label>
-				<label htmlFor='s3' id='slide3' className='slide lower'>
+				<label htmlFor='s3' id='slide3' className='slide lower' index={3}>
 					<AcademicTimeline
 						logo='fa-laptop-house'
 						name='Crendence Analytics'
@@ -214,7 +225,7 @@ const Timeline = () => {
 						achievementName='Developed Cli tools using NodeJS'
 					/>
 				</label>
-				<label htmlFor='s4' id='slide4' className='slide d-none'>
+				<label htmlFor='s4' id='slide4' className='slide d-none' index={4}>
 					<CodingStats />
 				</label>
 			</div>

@@ -26,7 +26,6 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			cursor: pointer;
 			transition: transform 0.4s ease;
 			background-color: $option-color1;
 			color: $secondary-color;
@@ -118,19 +117,19 @@
 		}
 		.upper {
 			box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.37);
-			transform: translate3d(0, -60%, -170px);
-			transition: all 0.2s ease-in-out;
+			transform: translate3d(0, -70%, -170px);
+			transition: all 0.4s ease-in-out;
 		}
 		.middle {
 			box-shadow: 13px 0 25px 0 rgba(0, 0, 0, 0.3),
 				0 11px 7px 0 rgba(0, 0, 0, 0.19);
 			transform: translate3d(0, 0, 30px);
-			transition: all 0.2s ease-in-out;
+			transition: all 0.4s ease-in-out;
 		}
 		.lower {
 			box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.37);
-			transform: translate3d(0, 60%, -170px);
-			transition: all 0.2s ease-in-out;
+			transform: translate3d(0, 70%, -170px);
+			transition: all 0.4s ease-in-out;
 		}
 	}
 }
