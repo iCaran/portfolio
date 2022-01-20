@@ -18,7 +18,7 @@ const ProjectIcon = ({
 			<div className='project-image'>
 				{image && (
 					<img
-						src={`${process.env.PUBLIC_URL}/assets/projectImages/${image}`}
+						src={`https://raw.githubusercontent.com/ShivamBhasin2002/assets/personal-portfolio/projectImages/${image}`}
 						alt={name + ' image'}
 					/>
 				)}
