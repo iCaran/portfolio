@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import animation from './blogging.svg';
 
 import './contact.styles.scss';
 
@@ -92,6 +91,13 @@ const Contact = () => {
 								<i className='fab fa-linkedin-in'></i>
 							</a>
 							<a
+								href='https://twitter.com/ShivamB52925821'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<i className='fab fa-twitter'></i>
+							</a>
+							<a
 								href='https://github.com/ShivamBhasin2002'
 								target='_blank'
 								rel='noreferrer'
@@ -111,9 +117,10 @@ const Contact = () => {
 			</form>
 			<div className='contact-image-holder'>
 				<span>
-					<object data={animation} type='image/svg+xml'>
-						hello
-					</object>
+					<img
+						src='https://raw.githubusercontent.com/ShivamBhasin2002/assets/personal-portfolio/contactPage/gifDark.gif'
+						alt='gif'
+					/>
 				</span>
 			</div>
 		</div>

@@ -69,8 +69,10 @@ let projects = [
 	.sort()
 	.sort((a, b) => {
 		if (a.link && !b.link) return -1;
+		return 0;
 	})
 	.sort((a, b) => {
 		if (a.starred && !b.starred) return -1;
+		return 0;
 	});
 module.exports = { projects };
