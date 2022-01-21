@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import './timeline.styles.scss';
 
+import { timeline } from '../../../assets/data';
+
 const AcademicTimeline = ({ logo, ...details }) => {
 	return (
 		<div className='academic-timeline'>
@@ -34,7 +36,7 @@ const CodingStats = () => {
 	});
 	useEffect(() => {
 		fetch(
-			'https://competitive-programming-platform.p.rapidapi.com/codechef/shivam_bhasin',
+			`https://competitive-programming-platform.p.rapidapi.com/codechef/${timeline.codechefUsername}`,
 			{
 				method: 'GET',
 				headers: {
@@ -54,7 +56,7 @@ const CodingStats = () => {
 			.catch((err) => {
 				console.error(err);
 			});
-		fetch('https://api.github.com/users/ShivamBhasin2002')
+		fetch(`https://api.github.com/users/${timeline.githubUsername}`)
 			.then((res) => res.json())
 			.then((res) =>
 				setGithubData({ repos: res.public_repos, followers: res.followers })
@@ -127,9 +129,9 @@ const CodingStats = () => {
 					<b>LEETCODE</b>
 				</h6>
 				<div className='stats'>
-					<b>Solved:</b> <span>62</span>
+					<b>Solved:</b> <span>{timeline.leetcode.questionsSolved}</span>
 					<br />
-					<b>Acceptance:</b> <span>33.6</span>
+					<b>Acceptance:</b> <span>{timeline.leetcode.acceptance}</span>
 					<br />
 				</div>
 			</div>
@@ -138,8 +140,8 @@ const CodingStats = () => {
 };
 
 const Timeline = () => {
-	let n = 4,
-		i = 2;
+	let n = timeline.academicDetails.length + 1,
+		i = timeline.activeSlide;
 	const changeSlide = (i) => {
 		i = parseInt(i);
 		let t = document.querySelector(`#slide${i}`);
@@ -192,40 +194,33 @@ const Timeline = () => {
 		}, 5000);
 		return () => clearInterval(interval);
 	}, []);
+	const getPosition = (i) => {
+		if (i == timeline.acitveSlide - 1) return 'upper';
+		else if (i == timeline.acitveSlide) return 'middle';
+		else if (i == timeline.acitveSlide + 1) return 'lower';
+		return 'd-none';
+	};
 	return (
 		<div className='timeline-container'>
 			<div className='slider'>
-				<input type='radio' name='slider' id='s1' index={1} />
-				<input type='radio' name='slider' id='s2' index={2} />
-				<input type='radio' name='slider' id='s3' index={3} />
-				<input type='radio' name='slider' id='s4' index={4} />
-				<label htmlFor='s1' id='slide1' className='slide upper' index={1}>
-					<AcademicTimeline
-						logo='fa-school'
-						name='Green Fields School'
-						course='High School, Computer Science'
-						achievementName='Board Marks'
-						achievementValue='93.4%'
-					/>
-				</label>
-				<label htmlFor='s2' id='slide2' className='slide middle' index={2}>
-					<AcademicTimeline
-						logo='fa-graduation-cap'
-						name='Manav Rachna International Institute Of Research And Studies'
-						course='B.Tech CSE, Cloud Computing'
-						achievementName='GPA'
-						achievementValue='8.59 SGPA'
-					/>
-				</label>
-				<label htmlFor='s3' id='slide3' className='slide lower' index={3}>
-					<AcademicTimeline
-						logo='fa-laptop-house'
-						name='Crendence Analytics'
-						course='Backend Development Intern'
-						achievementName='Developed Cli tools using NodeJS'
-					/>
-				</label>
-				<label htmlFor='s4' id='slide4' className='slide d-none' index={4}>
+				{timeline.academicDetails.map((details, i) => (
+					<label
+						htmlFor={`s${i + 1}`}
+						id={`slide${i + 1}`}
+						className={`slide ${getPosition(i + 1)}`}
+						index={i + 1}
+					>
+						<input type='radio' name='slider' id={`s${i + 1}`} index={i + 1} />
+						<AcademicTimeline {...details} />
+					</label>
+				))}
+				<label
+					htmlFor={`s${n}`}
+					id={`slide${n}`}
+					className='slide d-none'
+					index={n}
+				>
+					<input type='radio' name='slider' id={`s${n}`} index={n} />
 					<CodingStats />
 				</label>
 			</div>

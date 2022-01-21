@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import './projectList.styles.scss';
 
-import { projects } from '../../../assets/workPageData';
+import { projects } from '../../../assets/data';
 
 const ProjectIcon = ({
 	id,

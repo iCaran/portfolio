@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { contactPage } from '../../assets/data';
 
 import './contact.styles.scss';
 
@@ -52,7 +53,7 @@ const Contact = () => {
 		<div id='contact'>
 			<form
 				className='contact-form'
-				action='https://formsubmit.co/bhasinshivam2002@gmail.com'
+				action={contactPage.formSubmitUrl}
 				method='POST'
 				autoComplete='off'
 			>
@@ -73,7 +74,7 @@ const Contact = () => {
 					<input
 						type='hidden'
 						name='_next'
-						value='https://shivam-bhasin.netlify.app/contact'
+						value={contactPage.redirectAfterFormSubmission}
 					/>
 					<input type='hidden' name='_template' value='table' />
 					<span className='social-media d-flex'>
@@ -83,32 +84,16 @@ const Contact = () => {
 							</button>
 						</span>
 						<span>
-							<a
-								href='https://www.linkedin.com/in/shivam-bhasin-465233166/'
-								target='_blank'
-								rel='noreferrer'
-							>
+							<a href={contactPage.linkedin} target='_blank' rel='noreferrer'>
 								<i className='fab fa-linkedin-in'></i>
 							</a>
-							<a
-								href='https://twitter.com/ShivamB52925821'
-								target='_blank'
-								rel='noreferrer'
-							>
+							<a href={contactPage.twitter} target='_blank' rel='noreferrer'>
 								<i className='fab fa-twitter'></i>
 							</a>
-							<a
-								href='https://github.com/ShivamBhasin2002'
-								target='_blank'
-								rel='noreferrer'
-							>
+							<a href={contactPage.github} target='_blank' rel='noreferrer'>
 								<i className='fab fa-github'></i>
 							</a>
-							<a
-								href='https://www.instagram.com/_.shivam.08/'
-								target='_blank'
-								rel='noreferrer'
-							>
+							<a href={contactPage.instagram} target='_blank' rel='noreferrer'>
 								<i className='fab fa-instagram'></i>
 							</a>
 						</span>
@@ -117,10 +102,7 @@ const Contact = () => {
 			</form>
 			<div className='contact-image-holder'>
 				<span>
-					<img
-						src='https://raw.githubusercontent.com/ShivamBhasin2002/assets/personal-portfolio/contactPage/gifDark.gif'
-						alt='gif'
-					/>
+					<img src={contactPage.image} alt='gif' />
 				</span>
 			</div>
 		</div>
