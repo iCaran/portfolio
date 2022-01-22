@@ -140,8 +140,8 @@ const CodingStats = () => {
 };
 
 const Timeline = () => {
-	let n = timeline.academicDetails.length + 1,
-		i = timeline.activeSlide;
+	let [n] = useState(timeline.academicDetails.length + 1),
+		[i] = useState(timeline.acitveSlide);
 	const changeSlide = (i) => {
 		i = parseInt(i);
 		let t = document.querySelector(`#slide${i}`);
@@ -188,16 +188,16 @@ const Timeline = () => {
 	});
 	useEffect(() => {
 		let interval = setInterval(() => {
-			i++;
+			i = i + 1;
 			if (i === n + 1) i = 1;
 			changeSlide(i);
 		}, 5000);
 		return () => clearInterval(interval);
 	}, []);
 	const getPosition = (i) => {
-		if (i == timeline.acitveSlide - 1) return 'upper';
-		else if (i == timeline.acitveSlide) return 'middle';
-		else if (i == timeline.acitveSlide + 1) return 'lower';
+		if (i === timeline.acitveSlide - 1) return 'upper';
+		else if (i === timeline.acitveSlide) return 'middle';
+		else if (i === timeline.acitveSlide + 1) return 'lower';
 		return 'd-none';
 	};
 	return (
@@ -205,13 +205,14 @@ const Timeline = () => {
 			<div className='slider'>
 				{timeline.academicDetails.map((details, i) => (
 					<label
+						key={i}
 						htmlFor={`s${i + 1}`}
 						id={`slide${i + 1}`}
 						className={`slide ${getPosition(i + 1)}`}
 						index={i + 1}
 					>
 						<input type='radio' name='slider' id={`s${i + 1}`} index={i + 1} />
-						<AcademicTimeline {...details} />
+						<AcademicTimeline key={i} {...details} />
 					</label>
 				))}
 				<label

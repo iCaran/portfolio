@@ -1,7 +1,7 @@
 @import '../../../assets/colors.scss';
 .timeline-container {
 	height: 100%;
-	@media (max-width: 500px) {
+	@media (max-width: 800px) {
 		height: 430px;
 	}
 	max-width: 900px;
@@ -12,7 +12,7 @@
 		perspective: 1000px;
 		transform-style: preserve-3d;
 		margin: 40vh 0;
-		@media (max-width: 500px) {
+		@media (max-width: 800px) {
 			margin: 10vh 0;
 		}
 		[type='radio'] {

@@ -7,8 +7,8 @@ import { aboutPage } from '../../../assets/data';
 const Content = () => (
 	<div className='content-wrapper'>
 		<ul className='content'>
-			{aboutPage.details.map((li) => (
-				<li>{li}</li>
+			{aboutPage.details.map((li, i) => (
+				<li key={i}>{li}</li>
 			))}
 			<a
 				href={aboutPage.resumeLink}

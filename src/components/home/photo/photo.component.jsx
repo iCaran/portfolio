@@ -3,7 +3,7 @@ import './photo.styles.scss';
 
 const Photo = () => (
 	<div id='photo'>
-		<img src={homePage.imageUrl} alt='Image not found' />
+		<img src={homePage.imageUrl} alt='Not found' />
 	</div>
 );
 
