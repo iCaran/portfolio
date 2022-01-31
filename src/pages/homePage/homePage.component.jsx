@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './homePage.styles.scss';
-
-import Intro from '../../components/home/introText/introText.component';
-import Photo from '../../components/home/photo/photo.component';
+import Intro from './components/introText.component';
+import Photo from './components/photo.component';
 
 const Home = () => (
-	<div id='intro'>
+	<div
+		id='intro'
+		className='flex flex-wrap-reverse w-screen bg-primaryColor box-border pt-16 md:h-screen md:pt-0'
+	>
 		<Intro />
 		<Photo />
 	</div>
