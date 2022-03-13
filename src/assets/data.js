@@ -1,78 +1,57 @@
 // HOME PAGE
 
 let homePage = {
-	name: 'Shivam',
-	designations: ['Student', 'Developer', 'Freelancer'],
+	name: 'Karan',
+	designations: ['Student', 'Developer',''],
 	imageUrl:
-		'https://raw.githubusercontent.com/ShivamBhasin2002/assets/personal-portfolio/homePage/intro.jpg'
+		'https://avatars.githubusercontent.com/u/91419527?v=4'
 };
 
 let projects = [
 	{
-		name: 'IWF-CLI',
-		repo: 'https://github.com/ShivamBhasin2002/cli-project',
-		link: 'https://www.npmjs.com/package/@credenceanalytics/iwfcli',
+		name: 'TASKS-CLI',
+		repo: 'https://github.com/iCaran/cli_tasks',
+		link: 'https://github.com/iCaran/cli_tasks/releases/tag/v0.1',
 		starred: true,
 		image: 'iwfcli.png'
 	},
 	{
 		name: 'Personal Portfolio',
-		repo: 'https://github.com/ShivamBhasin2002/portfolio',
-		link: 'https://shivam-bhasin.netlify.app',
+		repo: 'https://github.com/iCaran/portfolio',
+		link: '',
 		starred: true,
 		image: 'personalPortfolio.png'
 	},
 	{
-		name: 'GFS Report Management System',
-		repo: 'https://github.com/ShivamBhasin2002/gfsRepManagementSystem',
-		link: 'https://tranquil-oasis-13718.herokuapp.com/',
+		name: 'Basic Banking System',
+		repo: 'https://github.com/iCaran/myBank',
+		link: 'https://unanimated-prefix.000webhostapp.com/',
 		starred: true,
 		image: 'gfsReportManagementSystem.png'
 	},
 	{
-		name: 'Beginner Personal Portfolio',
-		repo: 'https://github.com/ShivamBhasin2002/personalPortfolio',
-		link: 'http://shivambhasin2002.herokuapp.com/',
+		name: 'Simple Covid-19 FAQ website',
+		repo: 'https://github.com/iCaran/iCorona',
+		link: 'https://icaran.github.io/iCorona/',
 		image: 'olderPersonalPortfolio.png'
 	},
 	{
-		name: 'Sorting Visualizer',
-		repo: 'https://github.com/ShivamBhasin2002/sorting-visualizer',
-		link: 'http://shivambhasinsortingvisualizer.netlify.app',
+		name: 'Beginner Portfolio',
+		repo: 'https://github.com/iCaran/myself',
+		link: 'https://icaran.github.io/myself/',
 		starred: true,
 		image: 'sorting-visualizer.png'
 	},
 	{
-		name: 'Pokedex',
-		repo: 'https://github.com/ShivamBhasin2002/pokedex',
-		link: 'http://shivambhasin2002.github.io/pokedex',
+		name: 'Demo Selenium Script for testing TSF website',
+		repo: 'https://github.com/iCaran/TSFselenium',
 		image: 'pokedex.png'
 	},
 	{
-		name: 'Authentication Using Bycrypt',
-		repo: 'https://github.com/ShivamBhasin2002/authenticationUsingBycrypt',
+		name: 'Demo Hospital cum Blog Website Template',
+		repo: 'https://github.com/iCaran/iHealth',
+		link: 'https://icaran.github.io/iHealth/',
 		image: 'loginTemplate.png'
-	},
-	{
-		name: 'Chat Application Using Socke.io',
-		repo: 'https://github.com/ShivamBhasin2002/userChatBotUsingSocket.io',
-		image: 'userChatBotUsingSocket.io.png'
-	},
-	{
-		name: 'Monsters Pokedex',
-		repo: 'https://github.com/ShivamBhasin2002/MonstersPokedex',
-		link: 'https://shivambhasin2002.github.io/MonstersPokedex/',
-		image: 'monstersPokedex.png'
-	},
-	{
-		name: 'Indian Campsights',
-		repo: 'https://github.com/ShivamBhasin2002/IndianCampSights',
-		image: 'indianCampsights.png'
-	},
-	{
-		name: 'Thug Clothing',
-		repo: 'https://github.com/ShivamBhasin2002/thugClothing',
-		image: 'thugClothing.png'
 	}
 ]
 	.sort()
@@ -86,12 +65,12 @@ let projects = [
 	});
 
 let contactPage = {
-	formSubmitUrl: 'https://formsubmit.co/bhasinshivam2002@gmail.com',
+	formSubmitUrl: 'https://formsubmit.co/kakoburaman@protonmail.com',
 	redirectAfterFormSubmission: 'https://shivam-bhasin.netlify.app/contact',
-	linkedin: 'https://www.linkedin.com/in/shivam-bhasin-465233166/',
-	twitter: 'https://twitter.com/ShivamB52925821',
-	github: 'https://github.com/ShivamBhasin2002',
-	instagram: 'https://www.instagram.com/_.shivam.08/',
+	linkedin: 'https://www.linkedin.com/in/karanpratapshaw/',
+	twitter: 'https://twitter.com/karanpshaw',
+	github: 'https://github.com/iCaran/',
+	instagram: 'https://www.instagram.com/karanpshaw/',
 	image:
 		'https://raw.githubusercontent.com/ShivamBhasin2002/assets/personal-portfolio/contactPage/gifDark.gif'
 };
