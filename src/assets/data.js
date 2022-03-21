@@ -52,6 +52,11 @@ let projects = [
 		repo: 'https://github.com/iCaran/iHealth',
 		link: 'https://icaran.github.io/iHealth/',
 		image: 'loginTemplate.png'
+	},
+	{
+		name: 'Poster Designing on Adobe Illustrator',
+		repo: 'https://github.com/iCaran/HyperAutomation',
+		link: 'https://github.com/iCaran/HyperAutomation'
 	}
 ]
 	.sort()
@@ -79,10 +84,9 @@ let aboutPage = {
 	resumeLink:
 		'https://drive.google.com/file/d/1hq0QW10x34a_y6zao-WCEm90MZJT11aZ/view?usp=sharing',
 	details: [
-		'Hi, I am Shivam Bhasin, a B.Tech CSE student with a huge interest in technology, coding, and development.',
-		'Currently, I have hands-on experience in Full Stack Web development, Video Editing, Photo Editing, Competitive Programming.',
-		'Working on technologies like NodeJS, ReactJS, SQL, Python, C++, Firebase, AWS.',
-		'Built a CLI application that allows all clients of Credence Analytics to automate the intialization of their product.'
+		'Hi, I am Karan Pratap Shaw, a B.Tech I.T. student with a huge interest in technology, coding, and development.',
+		'Currently, I have hands-on experience in Full Stack Web development, Graphics Designing, Android Development, Competitive Programming.',
+		'Working on technologies like ReactJS, SQL, Python, C++, Java, RestAPI.'
 	]
 };
 
@@ -91,30 +95,30 @@ let timeline = {
 	academicDetails: [
 		{
 			logo: 'fa-school',
-			name: 'Green Fields School',
+			name: 'St. Patrick H.S. School',
 			course: 'High School, Computer Science',
 			achievementName: 'Board Marks',
-			achievementValue: '93.4%'
+			achievementValue: '81%'
 		},
 		{
 			logo: 'fa-graduation-cap',
-			name: 'Manav Rachna International Institute Of Research And Studies',
-			course: 'B.Tech CSE, Cloud Computing',
+			name: 'Dr. B.C. Roy Engineering College',
+			course: 'B.Tech I.T.',
 			achievementName: 'GPA',
-			achievementValue: '8.59 SGPA'
+			achievementValue: '9.54 SGPA'
 		},
 		{
 			logo: 'fa-laptop-house',
-			name: 'Crendence Analytics',
-			course: 'Backend Development Intern',
-			achievementName: 'Developed Cli tools using NodeJS'
+			name: 'The Sparks Foundation',
+			course: 'Web Development Intern',
+			achievementName: 'Developed frontend sites using HTML CSS JS with SQL for DB'
 		}
 	],
-	codechefUsername: 'shivam_bhasin',
-	githubUsername: 'ShivamBhasin2002',
+	codechefUsername: 't2p_1q0',
+	githubUsername: 'iCaran',
 	leetcode: {
-		questionsSolved: 62,
-		acceptance: 33.6
+		questionsSolved: 6,
+		acceptance: 22.2
 	}
 };
 
