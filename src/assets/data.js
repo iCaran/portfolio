@@ -98,7 +98,7 @@ let contactPage = {
 
 let aboutPage = {
 	resumeLink:
-		'https://drive.google.com/file/d/1hq0QW10x34a_y6zao-WCEm90MZJT11aZ/view?usp=sharing',
+		'',
 	details: [
 		'Hi, I am Shivam Bhasin, a B.Tech CSE student with a huge interest in technology, coding, and development.',
 		'Currently, I have hands-on experience in Full Stack Web development, Video Editing, Photo Editing, Competitive Programming.',
