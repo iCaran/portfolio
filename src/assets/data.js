@@ -20,7 +20,7 @@ let projects = [
 		repo: 'https://github.com/iCaran/portfolio',
 		link: 'https://karan-pratap-shaw.netlify.app/',
 		starred: true,
-		image: 'personalPortfolio.png'
+		image: 'personalPortfolio2.png'
 	},
 	{
 		name: 'Basic Banking System',
