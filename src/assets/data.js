@@ -4,7 +4,7 @@ let homePage = {
 	name: 'Karan',
 	designations: ['Student', 'Developer',''],
 	imageUrl:
-		'https://avatars.githubusercontent.com/u/91419527?v=4'
+		'https://raw.githubusercontent.com/iCaran/assets/personal-portfolio/me.jpg'
 };
 
 let projects = [
@@ -13,7 +13,7 @@ let projects = [
 		repo: 'https://github.com/iCaran/cli_tasks',
 		link: 'https://github.com/iCaran/cli_tasks/releases/tag/v0.1',
 		starred: true,
-		image: 'iwfcli.png'
+		image: 'tcli.png'
 	},
 	{
 		name: 'Personal Portfolio',
@@ -27,36 +27,36 @@ let projects = [
 		repo: 'https://github.com/iCaran/myBank',
 		link: 'https://unanimated-prefix.000webhostapp.com/',
 		starred: true,
-		image: 'gfsReportManagementSystem.png'
+		image: 'tsfbank.png'
 	},
 	{
 		name: 'Simple Covid-19 FAQ website',
 		repo: 'https://github.com/iCaran/iCorona',
 		link: 'https://icaran.github.io/iCorona/',
-		image: 'olderPersonalPortfolio.png'
+		image: 'icorona.png'
 	},
 	{
 		name: 'Beginner Portfolio',
 		repo: 'https://github.com/iCaran/myself',
 		link: 'https://icaran.github.io/myself/',
 		starred: true,
-		image: 'sorting-visualizer.png'
+		image: 'olderPersonalPortfolio.png'
 	},
 	{
-		name: 'Demo Selenium Script for testing TSF website',
+		name: 'Selenium Script for testing TSF website',
 		repo: 'https://github.com/iCaran/TSFselenium',
-		image: 'pokedex.png'
+		image: 'tsfSelenium.png'
 	},
 	{
-		name: 'Demo Hospital cum Blog Website Template',
+		name: 'Hospital cum Blog Website Template',
 		repo: 'https://github.com/iCaran/iHealth',
 		link: 'https://icaran.github.io/iHealth/',
-		image: 'loginTemplate.png'
+		image: 'iHealth.png'
 	},
 	{
-		name: 'Poster Designing on Adobe Illustrator',
+		name: 'Poser on Hyper-Automation',
 		repo: 'https://github.com/iCaran/HyperAutomation',
-		link: 'https://github.com/iCaran/HyperAutomation'
+		image: 'hyperauto.png'
 	}
 ]
 	.sort()
@@ -82,7 +82,7 @@ let contactPage = {
 
 let aboutPage = {
 	resumeLink:
-		'https://drive.google.com/file/d/1hq0QW10x34a_y6zao-WCEm90MZJT11aZ/view?usp=sharing',
+		'',
 	details: [
 		'Hi, I am Karan Pratap Shaw, a B.Tech I.T. student with a huge interest in technology, coding, and development.',
 		'Currently, I have hands-on experience in Full Stack Web development, Graphics Designing, Android Development, Competitive Programming.',
