@@ -18,7 +18,7 @@ let projects = [
 	{
 		name: 'Personal Portfolio',
 		repo: 'https://github.com/iCaran/portfolio',
-		link: '',
+		link: 'https://karan-pratap-shaw.netlify.app/',
 		starred: true,
 		image: 'personalPortfolio.png'
 	},
@@ -71,7 +71,7 @@ let projects = [
 
 let contactPage = {
 	formSubmitUrl: 'https://formsubmit.co/kakoburaman@protonmail.com',
-	redirectAfterFormSubmission: 'https://shivam-bhasin.netlify.app/contact',
+	redirectAfterFormSubmission: 'https://karan-pratap-shaw.netlify.app/contact',
 	linkedin: 'https://www.linkedin.com/in/karanpratapshaw/',
 	twitter: 'https://twitter.com/karanpshaw',
 	github: 'https://github.com/iCaran/',
