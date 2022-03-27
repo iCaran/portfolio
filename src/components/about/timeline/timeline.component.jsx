@@ -26,9 +26,9 @@ const AcademicTimeline = ({ logo, ...details }) => {
 
 const CodingStats = () => {
 	let [codechefData, setCodechefData] = useState({
-		stars: 0,
-		rating: 0,
-		solved: 0
+		stars: 2,
+		rating: 1501,
+		solved: 98
 	});
 	let [githubData, setGithubData] = useState({
 		repos: 0,
