@@ -2,7 +2,7 @@
 
 let homePage = {
 	name: 'Karan',
-	designations: ['Student', 'Developer',''],
+	designations: ['Student', 'Developer'],
 	imageUrl:
 		'https://raw.githubusercontent.com/iCaran/assets/personal-portfolio/me2.jpg'
 };
