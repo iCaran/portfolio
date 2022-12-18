@@ -89,7 +89,7 @@ let contactPage = {
 
 let aboutPage = {
 	resumeLink:
-		'https://drive.google.com/file/d/1UVNO3ke8BJ_8ewfrJr3O56mtwIbv9M6r/view?usp=sharing',
+		'https://drive.google.com/file/d/1shj0fzclKUckGNQE1xH113h_YUF_KJKx/view?usp=sharing',
 	details: [
 		'Hi, I am Karan Pratap Shaw, a B.Tech I.T. student with a huge interest in technology, coding, and development.',
 		'Currently, I have hands-on experience in Full Stack Web development, Graphics Designing, Android Development, Competitive Programming.',
