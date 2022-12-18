@@ -9,6 +9,13 @@ let homePage = {
 
 let projects = [
 	{
+		name: 'DeBloater',
+		repo: 'https://github.com/iCaran/poco_debloat',
+		link: 'https://bb.chip.icu/d/56-an-android-debloater-tool-general-poco-c31miui-125',
+		starred: true,
+		image: 'deb.png'
+	},
+	{
 		name: 'TASKS-CLI',
 		repo: 'https://github.com/iCaran/cli_tasks',
 		link: 'https://github.com/iCaran/cli_tasks/releases/tag/v0.1',
@@ -117,8 +124,8 @@ let timeline = {
 	codechefUsername: 't2p_1q0',
 	githubUsername: 'iCaran',
 	leetcode: {
-		questionsSolved: 6,
-		acceptance: 22.2
+		questionsSolved: 27,
+		acceptance: ,
 	}
 };
 
