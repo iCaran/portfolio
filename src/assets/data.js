@@ -125,7 +125,7 @@ let timeline = {
 	githubUsername: 'iCaran',
 	leetcode: {
 		questionsSolved: 27,
-		acceptance: ,
+		acceptance: 33,
 	}
 };
 
